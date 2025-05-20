@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Waitlist Signup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body class="signup-page">
+  <div class="container">
+    <form id="signup-form">
+      <h1>IPhone 16 Pre-Order</h1>
+      <input type="text" id="name" placeholder="Enter your Name" required />
+      <input type="email" id="email" placeholder="Enter your email" required />
+      <input type="text" id="phone" placeholder="Enter your Phone number" required />
+      <input type="text" id="referralCode" placeholder="Enter referral code (optional)" />
+      <div class="rank">
+        <p>Need to Know the Top 10</p>
+        <p>-></p>
+        <a href="/rank">Click Here</a>
+      </div>
+      <button type="submit">Pre-Order</button><br />
+    </form>
+    <div id="result"></div>
+  </div>
+</body>
+
+</html>

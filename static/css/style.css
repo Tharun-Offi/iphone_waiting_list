@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+    --primary: #ffd700;
+    --secondary: white;
+    --background: #0000003f;
+}
+
+.signup-page * {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    color: var(--secondary);
+    padding: 0;
+    margin: 0;
+}
+
+.signup-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url("/static/bg.jpg") no-repeat center center;
+    background-size: cover;
+    backdrop-filter: brightness(40%);
+    position: relative;
+    overflow-y: hidden;
+}
+
+.signup-page .container {
+    background: #f3f3f333;
+    backdrop-filter: blur(5px);
+    /* border: 0.2px solid #f3f3f3; */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.616);
+    width: 400px;
+    height: 500px;
+}
+
+.signup-page #signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 350px;
+}
+
+.signup-page h1 {
+    font-weight: 600;
+    padding: 30px 0;
+    color: var(--primary);
+}
+
+.signup-page input[type="email"],
+.signup-page input[type="text"] {
+    display: block;
+    background: var(--background);
+    border: 0.01px solid #f3f3f385;
+    width: 350px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.signup-page input[type="email"]::placeholder,
+.signup-page input[type="text"]::placeholder {
+    color: #f2f2f2;
+}
+
+.signup-page button {
+    width: 100px;
+    height: 35px;
+    background: var(--background);
+    color: var(--primary);
+    font-weight: 600;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+.signup-page button:hover {
+    background: #ffe60069;
+    color: var(--secondary);
+    font-size: 14px;
+    border-radius: 15px;
+}
+
+.signup-page .rank {
+    display: flex;
+    justify-content: space-evenly;
+    width: 350px;
+    margin: 35px;
+}
+
+.signup-page p,
+.signup-page a {
+    font-size: 14px;
+}
+
+.signup-page a {
+    color: var(--primary);
+}
+
+.signup-page span {
+    color: var(--primary);
+}
+
+.signup-page #signup-result {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.rank-page {
+    --primary: #ffd700;
+    --secondary: white;
+    --background: #0000003f;
+}
+
+.rank-page * {
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    outline: none;
+    color: var(--secondary);
+    padding: 0;
+    margin: 0;
+}
+
+.rank-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    min-height: 100vh;
+    background: url("/static/bg.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+    backdrop-filter: brightness(40%);
+}
+
+.rank-page .container {
+    padding: 5% 0;
+    margin: 5% 20%;
+    background: #f3f3f333;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    box-shadow: 0 0 20px 1px rgba(255, 255, 255, 0.479);
+}
+
+.rank-page h1 {
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.rank-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.rank-page th,
+.rank-page td {
+    padding: 8px 75px;
+    text-align: left;
+    border-bottom: none;
+}
+
+.rank-page th {
+    background-color: var(--background);
+}
+
+.rank-page .back {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+    padding: 15px;
+}
+
+.rank-page a {
+    color: var(--primary);
+}
